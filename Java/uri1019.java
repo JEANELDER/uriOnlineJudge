@@ -10,14 +10,15 @@ class uri1019{
       if(minutos>60){
         horas = (int)minutos/60;
         minutos=minutos%60;
-        System.out.printf("%0.f:%0.f:%0.f",horas,minutos,segundos);
+        segundos=int(segundos);
+        System.out.println(horas+":"+minutos+":"+segundos);
       }
       else{
-        System.out.printf("0:%0.f:%0.f",minutos,segundos);
+        System.out.println("0:"+minutos+":"+segundos);
       }
     }
     else{
-      System.out.printf("0:0:%0.f",segundos);
+      System.out.println("0:0:"+segundos);
     }
   }
 }
